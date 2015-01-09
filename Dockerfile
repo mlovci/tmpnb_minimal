@@ -6,4 +6,5 @@ RUN sudo apt-get install -y gfortran
 RUN pip install  https://github.com/YeoLab/flotilla/archive/master.zip 
 VOLUME /home/jovyan/flotilla_projects
 RUN chown -R /home/joyvan/flotilla_projects && chgrp -R /home/joyvan/flotilla_projects
+RUN git clone https://github.com/YeoLab/flotilla.git && mv flotilla/examples /home/joyvan/demo_and_examples && rm -rf flotilla
 USER jovyan
