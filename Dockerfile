@@ -5,3 +5,4 @@ RUN sudo apt-get install -y libblas3gf libblas-doc libblas-dev liblapack3gf libl
 RUN sudo apt-get install -y gfortran
 RUN pip install  https://github.com/YeoLab/flotilla/archive/master.zip 
 USER jovyan
+VOLUME /home/jovyan/flotilla_projects
