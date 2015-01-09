@@ -4,3 +4,4 @@ RUN sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython 
 RUN sudo apt-get install -y libblas3gf libblas-doc libblas-dev liblapack3gf liblapack-dev
 RUN sudo apt-get install -y gfortran
 RUN pip install  https://github.com/YeoLab/flotilla/archive/master.zip 
+USER jovyan
