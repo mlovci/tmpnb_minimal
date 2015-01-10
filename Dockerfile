@@ -11,5 +11,4 @@ RUN pip install  https://github.com/YeoLab/flotilla/archive/master.zip
 RUN mkdir -p /home/jovyan/flotilla_projects
 RUN chown -R jovyan /home/jovyan/flotilla_projects && chgrp -R jovyan /home/jovyan/flotilla_projects
 USER jovyan
-RUN cd /home/jovyan && git clone https://github.com/YeoLab/flotilla.git && cp -r flotilla/examples demo_and_examples
 
